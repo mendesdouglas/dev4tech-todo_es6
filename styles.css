@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --paste: #A69A7B;
+    --light: #EEE;
+    --green: #69E796;
+    --green-dark: #35A69B;
+    --green-darkest: #346D67;
+    --purple: #7B37DA;
+    --purple-dark: #3E0F45
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+
+body{
+    /* background: #37474f; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to  right, var(--dark) 0%, var(--darker) 0%, var(--purple-dark) 100%);
+}
+
+#container{
+    display: flex;
+    width: 80rem;
+    min-width: 1200px;
+    height: 70vh;
+    background-color: var(--green-dark);
+    border-radius: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#navbar{
+    width: 100%;
+    height: 100px;
+    background-color: var(--purple-dark);
+    display: flex ;
+}
+
+.inputBox{
+    position: relative;
+    width: 50%;
+}
+
+.inputBox input{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    background-color: var(--purple);
+    /* border-radius: 5px; */
+    outline: none;
+    color: var(--light);
+    font-size: 2em;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    color: var(--light);
+    pointer-events: none;
+    font-size:1em;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: var(--purple);
+    transform: translateX(0px) translateY(-10px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: var(--light);
+    /* border-left: 2px solid #8B2298; */
+}
+
+
+.task-list h2{
+    
+    font-size:xx-large ;
+    color: var(--light);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+
+}
+
+#tasks{
+    display: flex;
+    padding-left: 1rem;
+    justify-content: center;
+    
+}
+
+.task{
+    display: flex;
+    
+
+}
+
+.content{
+    display: flex;
+    background: var(--green-darkest);
+    height: 2rem;
+    padding-left: 1rem;
+}
+
+.task input{
+    
+    background: var(--green-darkest);
+    color: var(--light);
+    border: none;
+    font-weight: bold;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    
+
+}
+
+.edit span svg{
+    color: #111827;
+}
+
+.actions{
+    display: flex;
+}
+
+.text-description{
+    width: 600px;
+}
+
+
+
+
+
+
